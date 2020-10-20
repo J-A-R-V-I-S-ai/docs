@@ -1,0 +1,157 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+::-webkit-scrollbar {
+    width:8px;
+    background:#f1f2f3;
+}
+
+::-webkit-scrollbar-thumb {
+    background:rgba(0,67,138,1);
+    border-radius:10px;
+}
+
+body {
+    font-family:'Montserrat', sans-serif;
+    background:#f1f2f3;
+}
+
+.sidebar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:30%;
+    height:100vh;
+    background:rgba(0,67,138,1);
+    z-index:5;
+    text-align:center;
+}
+
+.sidebar img {
+    width:30%;
+    margin-top:10vh;
+}
+
+.sidebar button {
+    background:none;
+    border:none;
+    color:white;
+    text-decoration:none;
+    font-family:'Montserrat', sans-serif;
+    font-size:1.5vw;
+    font-weight:600;
+    transition:opacity 0.2s ease-in-out;
+}
+
+.sidebar .submenu {
+    position:fixed;
+    top:0;
+    left:30%;
+    padding:10vh 5vw;
+    height:100vh;
+    background:rgba(47,137,208,1);
+    transform:scale(0,1);
+    transition:transform 0.3s ease-out 0.3s;
+    transform-origin:left;
+    z-index:5;
+
+}
+
+.nav-list {
+    display:flex;
+    flex-direction:column;
+    gap:5vh;
+    list-style:none;
+    padding-top:10vh;
+    margin-right:1vw;
+}
+
+.submenu-list {
+    display:flex;
+    flex-direction:column;
+    gap:4vh;
+    list-style:none;
+    opacity:0;
+    transition:opacity 0.3s ease-in-out;
+}
+
+.submenu-link {
+    text-decoration:none;
+    color:white;
+    font-size:1.5vw;
+    font-weight:600;
+    transition:opacity 0.2s ease-in-out;
+}
+
+.sidebar a:hover,
+.sidebar button:hover {
+    opacity:0.8;
+    transition:opacity 0.2s ease-in-out;
+}
+
+.sidebar button:focus ~ div {
+    transform:scale(1,1);
+    transition:transform 0.3s ease-out;
+    transform-origin:left;
+}
+
+.sidebar button:focus ~ div ul {
+    opacity:1;
+    transition:opacity 0.3s ease-in-out 0.2s;
+}
+
+.docs {
+    padding-left:35vw;
+    padding-top:5vw;
+    padding-right:10vw;
+}
+
+.docs h1 {
+    font-size:4vw;
+    font-weight:900;
+}
+
+.docs p {
+    font-size:1.25vw;
+    color:#444;
+    font-weight:300;
+    padding-top:3vh;
+}
+
+.docs h2 {
+    font-size:2vw;
+    font-weight:600;
+    padding-top:3vh;
+}
+
+.docs ul {
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:3vh;
+    padding-bottom:5vh;
+    padding-top:3vh;
+}
+
+.docs .submenu {
+    padding-left:4vw;
+    padding-bottom:0;
+}
+
+.docs a {
+    text-decoration:none;
+    color:#666;
+    font-weight:600;
+    transition:color 0.2s ease-in-out;
+}
+
+.docs a:hover {
+    color:rgba(0,67,138,1);
+    transition:color 0.2s ease-in-out;
+}
