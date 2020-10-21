@@ -49,6 +49,15 @@ body {
     transition:opacity 0.2s ease-in-out;
 }
 
+.sidebar button a {
+    color:white;
+    text-decoration:none;
+    font-family:'Montserrat', sans-serif;
+    font-size:1.5vw;
+    font-weight:600;
+    transition:opacity 0.2s ease-in-out;
+}
+
 .sidebar .submenu {
     position:fixed;
     top:0;
@@ -131,23 +140,16 @@ body {
     padding-top:3vh;
 }
 
-.docs ul {
-    list-style:none;
-    display:flex;
-    flex-direction:column;
-    gap:3vh;
-    padding-top:3vh;
-}
-
-.docs .submenu {
-    padding-left:4vw;
-    padding-bottom:0;
+.docs code {
+    background:#ddd;
 }
 
 .docs a {
     text-decoration:none;
-    color:#666;
+    padding-top:3vh;
+    display:block;
     font-weight:600;
+    color:#555;
     transition:color 0.2s ease-in-out;
 }
 
