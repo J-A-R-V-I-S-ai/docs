@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>JARVIS | Documentation</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="commands.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
-    <header class="sidebar">
+    <title>Modules</title>
+</head>
+<body>
+<header class="sidebar">
       <img src="JARVIS.png" alt="">
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-list-element"><button class="nav-link">Home</button></li>
+          <li class="nav-list-element"><button class="nav-link"><a href="/docs/index.html">Home</a></button></li>
           <li class="nav-list-element">
             <button class="nav-link">Installation</button>
             <div class="submenu">
@@ -61,50 +59,25 @@
       </nav>
     </header>
     <div class="docs">
-        <h1 class="title">JARVIS Documentation</h1>
-        <h2><b>Author</b>: Rudra Sekhri</h2>
-        <h2><b>Version</b>: v0.5</h2>
-        <p>J.A.R.V.I.S is a standalone personal AI assistant that listens to your voice using Google’s Speech API and uses AI generated speech to respond to your requests. Below are some other features of JARVIS -</p>
-        <p>- automate tasks like opening apps, searching on browsers like Google and Firefox, opening and editing files, writing emails, telling the time, finding a location of your choice, etc. on your computer</p>
-        <p>- Give daily reports of your computer usage, internet usage, app usage, amount of time sitting down and can even give recommendations based on this data. An example would be - ‘you have been sitting on your computer for over an hour, go outside and take a break!’.</p>
-        <p>- allows you to schedule tasks to be done at a specific time. JARVIS will even remind you of certain tasks that need completing as those deadlines approach, making sure you don’t be late for anything!</p>
-        <h2 style="width:90%; font-weight:700;">Content</h2>
-        <ul>
-            <li><a href="installation.html">Installation</a>
-                <ul class="submenu">
-                    <li><a href="installation.html">Installing using Installer</a></li>
-                    <li><a href="installation.html">Installing using Git</a></li>
-                </ul>
-            </li>
-            <li><a href="">Commands</a>
-                <ul class="submenu">
-                    <li><a href="commands.html">Open Commands</a></li>
-                    <li><a href="commands.html">Close Commands</a></li>
-                    <li><a href="commands.html">Weather Commands</a></li>
-                    <li><a href="commands.html">Search Commands</a></li>
-                    <li><a href="commands.html">Math Commands</a></li>
-                    <li><a href="commands.html">Timetable</a></li>
-                    <li><a href="commands.html">Map and Location</a></li>
-                    <li><a href="commands.html">Time</a></li>
-                    <li><a href="commands.html">Wake Detection</a></li>
-                    <li><a href="commands.html">Conversational Commands</a></li>
-                </ul>
-            </li>
-            <li><a href="">Modules</a>
-                <ul class="submenu">
-                    <li><a href="">App Manager</a></li>
-                    <li><a href="">Audio Manager</a></li>
-                    <li><a href="">Calculator</a></li>
-                    <li><a href="">Command Handler</a></li>
-                    <li><a href="">Map Manager</a></li>
-                    <li><a href="">Time Manager</a></li>
-                    <li><a href="">Timetable Manager</a></li>
-                    <li><a href="">Weather Manager</a></li>
-                    <li><a href="">Web Searches Manager</a></li>
-                </ul>
-            </li>
-            <li><a href="">FAQ</a></li>
-        </ul>
+        <h1>Modules</h1>
+        <h2>App Manager</h2>
+        <p>Manages the opening and closing of apps</p>
+        <h2>Audio Manager</h2>
+        <p>Manages all volume related commands (muting, turning the volume up, down, etc.)</p>
+        <h2>Calculator</h2>
+        <p>Built-in calculator for JARVIS that calculates basic functions like adding, subtracting, multiplying, dividing and computation of powers (indices)</p>
+        <h2>Command Handler</h2>
+        <p>The Command Handler is the module that handles all your commands, and sending requests to other modules like App Manager to do a task for you; an example is opening microsoft word on your laptop.</p>
+        <h2>Map Manager</h2>
+        <p>Manages location and map related commands. Check the commands docs to see what commands are currently available.</p>
+        <h2>Time Manager</h2>
+        <p>Manages all time-related commands. This includes getting the time, getting the time in a particular city, etc.</p>
+        <h2>Timetabler</h2>
+        <p>JARVIS has an built-in timetabler, which schedules tasks and events for you. The timetabler module manages all commands related to scheduling tasks and events. This can range from get all the events and their corresponding due dates, to automatically being notified on when an event is only a few days away.</p>
+        <h2>Weather Manager</h2>
+        <p>Performs a variety of weather-related tasks like getting the weather today, tomorrow, etc.</p>
+        <h2>Web Searches Manager</h2>
+        <p>Manages all search-related commands, making sure to search on your browser of choice.</p>
     </div>
-  </body>
+</body>
 </html>
